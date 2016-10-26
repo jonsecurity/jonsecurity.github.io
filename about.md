@@ -1,7 +1,6 @@
 ---
-title: "About"
-layout: single
-sitemap: false
+layout: page
+title: About
 permalink: /about/
 ---
 
