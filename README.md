@@ -1,5 +1,23 @@
 # Amplify for Jekyll
 
+
+# Build Local
+
+cd <path to this repo root>
+docker run --label=jekyll --volume=$(pwd):/srv/jekyll   -it -p 127.0.0.1:4000:4000 jondb/jekyll-amplify /bin/bash
+
+
+#if you need to fix things:
+
+gem install hitimes -v '1.2.2'
+bundle install
+
+
+# Finally,
+bundle exec jekyll s
+
+
+
 *A Jekyll html theme in the vague style of Medium.com built using Google AMP*
 
 Google's [Accelerated Mobile Pages Project](https://www.ampproject.org/)

@@ -42,7 +42,7 @@ or this:
          (req, res) => {
              // do work
          }
-         
+
          function doAuthorization(req, res, next) {
              // lookup some roles from the db
              // map roles to req.path
@@ -60,10 +60,10 @@ or this:
     app.put(“/admin/user/(?userID)”,
             isUserAdmin(req, res, next),
             (req, res) => {});
-    app.get(“/user/(?userID)”, 
+    app.get(“/user/(?userID)”,
             isUserEqualToUserID(req, res, next),
             (req, res) => {/*get user*/});
-    app.put(“/user/(?userID)”, 
+    app.put(“/user/(?userID)”,
             isUserEqualToUserID(req, res, next),
             (req, res) => {/*update user*/});
 {% endhighlight %}
@@ -79,11 +79,10 @@ app.put(“/user/(?userID)”,
                 }
                 else if (_.contains(req.user.userID == req.params.userID) {
                     // update user
-                } 
+                }
                 else {
                   // return error
               }
-                    
         });
 {% endhighlight %}
 
