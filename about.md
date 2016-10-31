@@ -35,6 +35,13 @@ Two fun facts about me:
 1. I have 4 amazing kids, 3 girls and 1 boy.
 2. I cannot get enough snowboarding, rock climbing, and mountain biking.
 
+## send me an encrypted file
+
+    curl https://keybase.io/jondb/key.asc | gpg --import -
+    gpg -e -a -r jon@blendlabs.com <filename>
+
+
+
 
 
 
